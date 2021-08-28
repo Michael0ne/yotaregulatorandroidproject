@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ВОЙТИ"
+        android:id="@+id/tvLoginHint"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#009DDB"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLogin"
+        android:singleLine="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:hint="Ваш телефон или e-mail"
+        android:layout_below="@+id/tvLoginHint" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPassword"
+        android:hint="Пароль"
+        android:singleLine="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/etLogin" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Запомнить"
+        android:id="@+id/chkRemember"
+        android:layout_marginLeft="15dp"
+        android:checked="true"
+        android:enabled="true"
+        android:layout_weight="0"
+        android:layout_below="@+id/etPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Забыли пароль?"
+        android:id="@+id/tvLinkPassForgot"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:textColor="#009DDB"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="35dp"
+        android:layout_weight="0"
+        android:layout_below="@+id/etPassword"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>
